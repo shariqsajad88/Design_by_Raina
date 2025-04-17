@@ -24,8 +24,12 @@ SECRET_KEY = 'django-insecure-b^w_=8vq*+9naf=69qj9z)@m6izx+g3#a-le&lk6twpchi%rua
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+import os
 
-ALLOWED_HOSTS = []
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+ALLOWED_HOSTS = ['.railway.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
