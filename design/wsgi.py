@@ -14,3 +14,5 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'design.settings')
 
 application = get_wsgi_application()
+
+web: gunicorn design.wsgi --bind 0.0.0.0:$PORT
