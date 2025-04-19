@@ -750,7 +750,6 @@
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-4 portfolio-item fade-in" data-category="
         <div class="col-md-4 mb-4 portfolio-item fade-in" data-category="commercial">
           <a href="{% static 'images/portfolio6.jpeg' %}" data-lightbox="portfolio" data-title="Retail Store Design">
             <img src="{% static 'images/portfolio6.jpeg' %}" alt="Retail Store Design">
@@ -780,7 +779,7 @@
             </div>
             <div class="client-info">
               <div class="client-img">
-                <img src="/api/placeholder/60/60" alt="Client">
+                <img src="{% static 'images/portfolio5.jpeg' %}" alt="Client">
               </div>
               <div>
                 <p class="client-name">Priya Sharma</p>
@@ -796,7 +795,7 @@
             </div>
             <div class="client-info">
               <div class="client-img">
-                <img src="/api/placeholder/60/60" alt="Client">
+                <img src="{% static 'images/portfolio5.jpeg' %}" alt="Client">
               </div>
               <div>
                 <p class="client-name">Rahul Mehta</p>
@@ -812,7 +811,7 @@
             </div>
             <div class="client-info">
               <div class="client-img">
-                <img src="/api/placeholder/60/60" alt="Client">
+                <img src="{% static 'images/portfolio5.jpeg' %}" alt="Client">
               </div>
               <div>
                 <p class="client-name">Ayesha Khan</p>
@@ -844,124 +843,123 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section bg-white text-center py-5" id="contact">
-    <div class="container">
-      <h2 class="fw-bold mb-4 fade-in">Get in Touch</h2>
-      <p class="mb-5 lead fade-in">We'd love to hear from you! Reach out with any questions or to schedule a consultation.</p>
-      
-      <div class="row">
-        <div class="col-lg-6 mb-4 fade-in">
-          <div class="contact-form">
-            <form id="contactForm">
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                    <label for="name">Your Name</label>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <div class="form-floating">
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                    <label for="email">Your Email</label>
-                  </div>
-                </div>
-              </div>
-              <div class="mb-4">
+ <!-- Contact Section -->
+ <section class="section bg-white text-center py-5" id="contact">
+  <div class="container">
+    <h2 class="fw-bold mb-4 fade-in">Get in Touch</h2>
+    <p class="mb-5 lead fade-in">We'd love to hear from you! Reach out with any questions or to schedule a consultation.</p>
+    
+    <div class="row">
+      <div class="col-lg-6 mb-4 fade-in">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6 mb-4">
                 <div class="form-floating">
-                  <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
-                  <label for="phone">Your Phone</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                  <label for="name">Your Name</label>
                 </div>
               </div>
-              <div class="mb-4">
+              <div class="col-md-6 mb-4">
                 <div class="form-floating">
-                  <select class="form-select" id="service" aria-label="Select Service">
-                    <option selected disabled>Select a service</option>
-                    <option value="residential">Residential Design</option>
-                    <option value="commercial">Commercial Design</option>
-                    <option value="renovation">Renovation & Remodeling</option>
-                    <option value="consultation">Design Consultation</option>
-                    <option value="other">Other</option>
-                  </select>
-                  <label for="service">Service You're Interested In</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  <label for="email">Your Email</label>
                 </div>
               </div>
-              <div class="mb-4">
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Your Message" id="message" style="height: 150px"></textarea>
-                  <label for="message">Your Message</label>
-                </div>
+            </div>
+            <div class="mb-4">
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                <label for="phone">Your Phone</label>
               </div>
-              <button type="submit" class="btn btn-dark w-100 py-3">Send Message</button>
-            </form>
-          </div>
+            </div>
+            <div class="mb-4">
+              <div class="form-floating">
+                <select class="form-select" id="service" aria-label="Select Service">
+                  <option selected disabled>Select a service</option>
+                  <option value="residential">Residential Design</option>
+                  <option value="commercial">Commercial Design</option>
+                  <option value="renovation">Renovation & Remodeling</option>
+                  <option value="consultation">Design Consultation</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="service">Service You're Interested In</label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Your Message" id="message" style="height: 150px"></textarea>
+                <label for="message">Your Message</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 py-3">Send Message</button>
+          </form>
         </div>
-        
-        <div class="col-lg-6 text-start fade-in">
-          <div class="ps-lg-5">
-            <h4 class="mb-4">Contact Information</h4>
-            
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <h6 class="fw-bold">Studio Address</h6>
-                <p>Design By Raina<br>
-                Habba Kadal Chowk<br>
-                Srinagar, Jammu & Kashmir - 190001<br>
-                India</p>
-              </div>
+      </div>
+      
+      <div class="col-lg-6 text-start fade-in">
+        <div class="ps-lg-5">
+          <h4 class="mb-4">Contact Information</h4>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
             </div>
-            
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <div>
-                <h6 class="fw-bold">Phone</h6>
-                <p><a href="tel:+919797087902" class="text-dark">+91 97970 87902</a></p>
-              </div>
+            <div>
+              <h6 class="fw-bold">Studio Address</h6>
+              <p>Design By Raina<br>
+              Habba Kadal Chowk<br>
+              Srinagar, Jammu & Kashmir - 190001<br>
+              India</p>
             </div>
-            
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <h6 class="fw-bold">Email</h6>
-                <p><a href="mailto:Designbyrainaa@gmail.com" class="text-dark">Designbyrainaa@gmail.com</a></p>
-              </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
             </div>
-            
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="fab fa-whatsapp"></i>
-              </div>
-              <div>
-                <h6 class="fw-bold">WhatsApp</h6>
-                <p><a href="https://wa.me/919797087902" target="_blank" class="text-dark">Chat with us</a></p>
-              </div>
+            <div>
+              <h6 class="fw-bold">Phone</h6>
+              <p><a href="tel:+919797087902" class="text-dark">+91 97970 87902</a></p>
             </div>
-            
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="far fa-clock"></i>
-              </div>
-              <div>
-                <h6 class="fw-bold">Working Hours</h6>
-                <p>Mon – Fri: 10:00 AM – 6:00 PM<br>
-                Saturday: 10:00 AM – 2:00 PM<br>
-                Sunday: Closed</p>
-              </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold">Email</h6>
+              <p><a href="mailto:Designbyrainaa@gmail.com" class="text-dark">Designbyrainaa@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold">WhatsApp</h6>
+              <p><a href="https://wa.me/919797087902" target="_blank" class="text-dark">Chat with us</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="far fa-clock"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold">Working Hours</h6>
+              <p>Mon – Fri: 10:00 AM – 6:00 PM<br>
+              Saturday: 10:00 AM – 2:00 PM<br>
+              Sunday: Closed</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
   <!-- Map Section -->
   <section class="map-section">
     <div class="map-container">
@@ -1075,17 +1073,40 @@
       });
       
       // Contact form submission
-      const contactForm = document.getElementById('contactForm');
-      if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          // You would typically send the form data to your server here
-          // For this example, we'll just show a success message
-          alert('Thank you for your message! We will get back to you soon.');
-          contactForm.reset();
-        });
+     const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+      // Get the CSRF token from the form
+      const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        headers: {
+          'X-CSRFToken': csrfToken,  // Ensure the CSRF token is sent here
+        },
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message! We will get back to you soon.');
+        contactForm.reset();
+      } else {
+        alert('Something went wrong. Please try again.');
       }
-      
+    } catch (error) {
+      alert('Error submitting form.');
+      console.error(error);
+    }
+  });
+}
+
+
       // Initialize lightbox
       lightbox.option({
         'resizeDuration': 200,
