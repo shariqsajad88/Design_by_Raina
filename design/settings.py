@@ -36,7 +36,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-ALLOWED_HOSTS = ['https://design-by-raina.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['design-by-raina.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
