@@ -848,7 +848,8 @@
   <div class="container">
     <h2 class="fw-bold mb-4 fade-in">Get in Touch</h2>
     <p class="mb-5 lead fade-in">We'd love to hear from you! Reach out with any questions or to schedule a consultation.</p>
-    
+    <form id="contactForm" method="post" action="{% url 'homepage' %}">
+      {% csrf_token %}
     <div class="row">
       <div class="col-lg-6 mb-4 fade-in">
         <div class="contact-form">
