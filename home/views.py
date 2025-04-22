@@ -34,7 +34,7 @@ def homepage(request):
                 email_subject,
                 email_message,
                 settings.DEFAULT_FROM_EMAIL,  # Default sender email
-                ['admin@example.com'],  # Admin email (you can customize this)
+                ['rainasaman0001@gmail.com'],  # Admin email (you can customize this)
             )
 
             # Return a success response

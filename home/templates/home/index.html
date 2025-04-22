@@ -844,39 +844,39 @@
   </section>
 
  <!-- Contact Section -->
- <section class="section bg-white text-center py-5" id="contact">
+<section class="section bg-white text-center py-5" id="contact">
   <div class="container">
     <h2 class="fw-bold mb-4 fade-in">Get in Touch</h2>
     <p class="mb-5 lead fade-in">We'd love to hear from you! Reach out with any questions or to schedule a consultation.</p>
+    
     <form id="contactForm" method="post" action="{% url 'homepage' %}">
       {% csrf_token %}
-    <div class="row">
-      <div class="col-lg-6 mb-4 fade-in">
-        <div class="contact-form">
-          <form id="contactForm">
+      <div class="row">
+        <div class="col-lg-6 mb-4 fade-in">
+          <div class="contact-form">
             <div class="row">
               <div class="col-md-6 mb-4">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                   <label for="name">Your Name</label>
                 </div>
               </div>
               <div class="col-md-6 mb-4">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                   <label for="email">Your Email</label>
                 </div>
               </div>
             </div>
             <div class="mb-4">
               <div class="form-floating">
-                <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone" required>
                 <label for="phone">Your Phone</label>
               </div>
             </div>
             <div class="mb-4">
               <div class="form-floating">
-                <select class="form-select" id="service" aria-label="Select Service">
+                <select class="form-select" id="service" name="service" aria-label="Select Service" required>
                   <option selected disabled>Select a service</option>
                   <option value="residential">Residential Design</option>
                   <option value="commercial">Commercial Design</option>
@@ -889,78 +889,80 @@
             </div>
             <div class="mb-4">
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Your Message" id="message" style="height: 150px"></textarea>
+                <textarea class="form-control" placeholder="Your Message" id="message" name="message" style="height: 150px" required></textarea>
                 <label for="message">Your Message</label>
               </div>
             </div>
             <button type="submit" class="btn btn-dark w-100 py-3">Send Message</button>
-          </form>
+          </div>
         </div>
+
+       <!-- Contact Information Section -->
+<div class="col-lg-6 text-start fade-in">
+  <div class="ps-lg-5">
+    
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <i class="fas fa-map-marker-alt"></i>
       </div>
-      
-      <div class="col-lg-6 text-start fade-in">
-        <div class="ps-lg-5">
-          <h4 class="mb-4">Contact Information</h4>
-          
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <h6 class="fw-bold">Studio Address</h6>
-              <p>Design By Raina<br>
-              Habba Kadal Chowk<br>
-              Srinagar, Jammu & Kashmir - 190001<br>
-              India</p>
-            </div>
-          </div>
-          
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div>
-              <h6 class="fw-bold">Phone</h6>
-              <p><a href="tel:+919797087902" class="text-dark">+91 97970 87902</a></p>
-            </div>
-          </div>
-          
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <h6 class="fw-bold">Email</h6>
-              <p><a href="mailto:Designbyrainaa@gmail.com" class="text-dark">Designbyrainaa@gmail.com</a></p>
-            </div>
-          </div>
-          
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <i class="fab fa-whatsapp"></i>
-            </div>
-            <div>
-              <h6 class="fw-bold">WhatsApp</h6>
-              <p><a href="https://wa.me/919797087902" target="_blank" class="text-dark">Chat with us</a></p>
-            </div>
-          </div>
-          
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <i class="far fa-clock"></i>
-            </div>
-            <div>
-              <h6 class="fw-bold">Working Hours</h6>
-              <p>Mon – Fri: 10:00 AM – 6:00 PM<br>
-              Saturday: 10:00 AM – 2:00 PM<br>
-              Sunday: Closed</p>
-            </div>
-          </div>
-        </div>
+      <div>
+        <h6 class="fw-bold">Studio Address</h6>
+        <p>Design By Raina<br>
+        Habba Kadal Chowk<br>
+        Srinagar, Jammu & Kashmir - 190001<br>
+        India</p>
+      </div>
+    </div>
+    
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <i class="fas fa-phone-alt"></i>
+      </div>
+      <div>
+        <h6 class="fw-bold">Phone</h6>
+        <p><a href="tel:+919797087902" class="text-dark">+91 97970 87902</a></p>
+        <p><a href="tel:+919622877887" class="text-dark">+91 96228 77887</a></p>
+      </div>
+    </div>
+    
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div>
+        <h6 class="fw-bold">Email</h6>
+        <p><a href="mailto:Designbyrainaa@gmail.com" class="text-dark">Designbyrainaa@gmail.com</a></p>
+      </div>
+    </div>
+    
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <div>
+        <h6 class="fw-bold">WhatsApp</h6>
+        <p><a href="https://wa.me/919797087902" target="_blank" class="text-dark">Chat with us</a></p>
+      </div>
+    </div>
+    
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <i class="far fa-clock"></i>
+      </div>
+      <div>
+        <h6 class="fw-bold">Working Hours</h6>
+        <p>Mon – Fri: 10:00 AM – 6:00 PM<br>
+        Saturday: 10:00 AM – 2:00 PM<br>
+        Sunday: Closed</p>
       </div>
     </div>
   </div>
+</div> <!-- Removed extra closing div here -->
+</div> <!-- This closing div is now correctly placed -->
+</form>
+</div>
 </section>
+
   <!-- Map Section -->
   <section class="map-section">
     <div class="map-container">
